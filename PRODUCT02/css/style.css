@@ -1,0 +1,272 @@
+500;600;700;800&display=swap');
+:root{--ink:#281b38;--muted:#756c7e;--line:#d8d2de;--purple:#54316b}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;color:var(--ink);background:#f3f0f5;font-family:'Pretendard','Pretendard Variable','Noto Sans KR',Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer}header{height:100px;display:flex;align-items:center;justify-content:space-between;margin:0 5%;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:16px;font-size:30px;font-weight:800;letter-spacing:-2px}.brand span{font-size:10px;letter-spacing:1.6px;font-weight:600}nav{display:flex;gap:34px;font-size:12px}nav a:hover{color:#8858aa}nav span{margin-left:12px}.hero{position:relative;text-align:center;padding:55px 5% 30px;background:radial-gradient(ellipse at 50% 55%,#e0d4ed 0,transparent 57%)}.eyebrow{font-size:10px;letter-spacing:2.3px;font-weight:600;display:flex;justify-content:center;align-items:center;gap:9px}.dot{height:6px;width:6px;background:#83519d;border-radius:50%}h1{font-size:clamp(35px,4.2vw,64px);line-height:1.28;letter-spacing:-3px;font-weight:600;margin:23px 0 16px}h1 span{color:#77568b}.lead{font-size:13px;color:var(--muted);margin:0}.stage{height:490px;position:relative;max-width:1400px;margin:0 auto}.stage-word{position:absolute;top:35%;left:0;width:100%;font-size:clamp(55px,13.8vw,210px);font-weight:800;letter-spacing:-8px;color:#fff6;line-height:1;pointer-events:none}model-viewer{position:relative;width:100%;height:100%;--progress-bar-color:#75508f;z-index:1;touch-action:pan-y}.loading{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:13px;background:#faf8fccc;padding:14px 24px;border-radius:30px}.stage-label{position:absolute;bottom:17px;left:0;right:0;display:flex;justify-content:space-between;font-size:9px;letter-spacing:1.7px;color:var(--muted);pointer-events:none}.viewer-bottom{border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;align-items:center;gap:15px;font-size:11px;color:var(--muted)}.viewer-bottom p{margin:0}.viewer-bottom p span{font-size:18px;margin-right:10px}.controls{display:flex;gap:8px}.controls button{background:#ffffff65;border:1px solid #d3cadc;border-radius:30px;padding:10px 17px;font-size:11px}.controls button:hover{background:#e4daed;color:#49275f}.scroll{display:inline-flex;align-items:center;gap:18px;margin:36px 0 10px;font-size:11px;color:var(--muted)}.scroll span{font-size:18px}#error{position:absolute;z-index:2;top:45%;left:10%;right:10%;background:#fff;padding:25px;font-size:13px}#reload{border:0;background:transparent;text-decoration:underline}.about{padding:80px 8% 64px;background:#faf9fb;border-top:1px solid var(--line)}.section-tag{font-size:10px;letter-spacing:2px;color:#82678e;margin-bottom:38px}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:10%}h2{font-size:clamp(27px,3vw,43px);font-weight:500;letter-spacing:-1.8px;line-height:1.4;margin:0}.about-grid p{font-size:14px;color:#736a7b;line-height:1.95;margin:0 0 18px}dl{margin:28px 0 0}dl div{border-top:1px solid #e2dce6;padding:15px 0;display:flex;align-items:center;gap:20px}dt{font-size:9px;letter-spacing:1px;width:70px;flex-shrink:0;color:#897b94}dd{font-size:11px;margin:0;display:flex;align-items:center;gap:7px}.swatch{width:10px;height:10px;border-radius:50%;display:inline-block}.purple{background:#402052}.silver{background:linear-gradient(120deg,#c0b9c5,#eee,#9d96a5);margin-left:10px}figure{margin:64px 0 0}figure img{width:100%;display:block;border-radius:3px}figcaption{display:flex;justify-content:space-between;margin-top:16px;font-size:10px;color:#887b92;letter-spacing:1px}footer{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:36px 5%;border-top:1px solid var(--line)}footer p,footer>a:last-child{font-size:10px;color:var(--muted)}footer .brand{font-size:24px}footer .brand span{font-size:8px}:focus-visible{outline:2px solid #8255a0;outline-offset:5px}@media(min-width:1600px){.stage{height:580px}}@media(max-width:640px){header{height:76px}.brand{font-size:26px}.brand span{font-size:8px;max-width:70px;letter-spacing:1px}nav{gap:14px;font-size:10px}nav span{display:none}.hero{padding-top:40px}.eyebrow{font-size:8px;letter-spacing:1.5px}h1{letter-spacing:-1.7px}.lead{font-size:11px}.stage{height:370px;margin:10px -4% 0}.stage-word{letter-spacing:-3px;top:40%}.stage-label{font-size:7px;letter-spacing:1px;padding:0 4%}.viewer-bottom{flex-direction:column;gap:15px;font-size:10px}.scroll{margin-top:26px}.about{padding:46px 6%}.section-tag{margin-bottom:26px}.about-grid{grid-template-columns:1fr;gap:28px}.about-grid p{font-size:13px}figure{margin-top:35px}figcaption{font-size:8px;letter-spacing:0}footer{flex-wrap:wrap;padding:25px 6%}footer p{order:3;width:100%;margin:0;font-size:9px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+:host {
+  display: block;
+  position: relative;
+  contain: strict;
+  width: 300px;
+  height: 150px;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.userInput {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
+  outline-offset: -1px;
+  outline-width: 1px;
+}
+
+canvas {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  /* NOTE(cdata): Chrome 76 and below apparently have a bug
+   * that causes our canvas not to display pixels unless it is
+   * on its own render layer
+   * @see https://github.com/google/model-viewer/pull/755#issuecomment-536597893
+   */
+  transform: translateZ(0);
+}
+
+.show {
+  display: block;
+}
+
+/* Adapted from HTML5 Boilerplate
+ *
+ * @see https://github.com/h5bp/html5-boilerplate/blob/ceb4620c78fc82e13534fc44202a3f168754873f/dist/css/main.css#L122-L133 */
+.screen-reader-only {
+  border: 0;
+  left: 0;
+  top: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  pointer-events: none;
+}
+
+.slot {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slot > * {
+  pointer-events: initial;
+}
+
+.annotation-wrapper ::slotted(*) {
+  opacity: var(--max-hotspot-opacity, 1);
+  transition: opacity 0.3s;
+}
+
+.pointer-tumbling .annotation-wrapper ::slotted(*) {
+  pointer-events: none;
+}
+
+.annotation-wrapper ::slotted(*) {
+  pointer-events: initial;
+}
+
+.annotation-wrapper.hide ::slotted(*) {
+  opacity: var(--min-hotspot-opacity, 0.25);
+}
+
+.slot.poster {
+  display: none;
+  background-color: inherit;
+}
+
+.slot.poster.show {
+  display: inherit;
+}
+
+.slot.poster > * {
+  pointer-events: initial;
+}
+
+.slot.poster:not(.show) > * {
+  pointer-events: none;
+}
+
+#default-poster {
+  width: 100%;
+  height: 100%;
+  /* The default poster is a <button> so we need to set display
+   * to prevent it from being affected by text-align: */
+  display: block;
+  position: absolute;
+  border: none;
+  padding: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff0;
+}
+
+#default-progress-bar {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+#default-progress-bar > .bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--progress-bar-height, 5px);
+  background-color: var(--progress-bar-color, rgba(0, 0, 0, 0.4));
+  transition: transform 0.09s;
+  transform-origin: top left;
+  transform: scaleX(0);
+  overflow: hidden;
+}
+
+#default-progress-bar > .bar.hide {
+  transition: opacity 0.3s 1s;
+  opacity: 0;
+}
+
+.centered {
+  align-items: center;
+  justify-content: center;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.slot.interaction-prompt {
+  display: var(--interaction-prompt-display, flex);
+  overflow: hidden;
+  opacity: 0;
+  will-change: opacity;
+  transition: opacity 0.3s;
+}
+
+.slot.interaction-prompt.visible {
+  opacity: 1;
+}
+
+.animated-container {
+  will-change: transform, opacity;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.slot.interaction-prompt > * {
+  pointer-events: none;
+}
+
+.slot.ar-button {
+  -moz-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+
+  display: var(--ar-button-display, block);
+}
+
+.slot.ar-button:not(.enabled) {
+  display: none;
+}
+
+.fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+}
+
+.fab > * {
+  opacity: 0.87;
+}
+
+#default-ar-button {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  transform: scale(var(--ar-button-scale, 1));
+  transform-origin: bottom right;
+}
+
+.slot.pan-target {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  background-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#default-pan-target {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  border: 1px solid white;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+.slot.default {
+  pointer-events: none;
+}
+
+.slot.progress-bar {
+  pointer-events: none;
+}
+
+.slot.exit-webxr-ar-button {
+  pointer-events: none;
+}
+
+.slot.exit-webxr-ar-button:not(.enabled) {
+  display: none;
+}
+
+#default-exit-webxr-ar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: env(safe-area-inset-top, 16px);
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+#default-exit-webxr-ar-button > svg {
+  fill: #fff;
+}

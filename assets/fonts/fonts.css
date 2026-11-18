@@ -1,0 +1,5 @@
+/* 오프라인용 한글 글꼴: Noto Sans CJK KR (SIL Open Font License) — 사이트에 쓰인 글자만 담은 부분 글꼴 */
+@font-face{font-family:'Noto Sans KR';src:url('noto-sans-kr-400.woff') format('woff');font-weight:300 450;font-style:normal;font-display:swap}
+@font-face{font-family:'Noto Sans KR';src:url('noto-sans-kr-500.woff') format('woff');font-weight:451 550;font-style:normal;font-display:swap}
+@font-face{font-family:'Noto Sans KR';src:url('noto-sans-kr-700.woff') format('woff');font-weight:551 750;font-style:normal;font-display:swap}
+@font-face{font-family:'Noto Sans KR';src:url('noto-sans-kr-900.woff') format('woff');font-weight:751 950;font-style:normal;font-display:swap}
