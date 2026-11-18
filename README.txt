@@ -1,75 +1,50 @@
-Echo Ring · 개인 제품 페이지 (2030 HEY GANGNAM · TEAM 01 · 제품 03 · 홍재원)
-=============================================================================
+2030 HEY GANGNAM · TEAM 01 웹사이트
+====================================
 
 실행
-  index.html 을 브라우저(Edge·Chrome)로 엽니다. 인터넷 없이도 작동합니다.
-  (글꼴만 인터넷이 있을 때 Pretendard 웹폰트를 쓰고, 없으면 시스템 글꼴로 표시)
-
-  ※ index.html 은 스타일 · 스크립트 · 이미지 · 3D 모델을 모두 파일 안에 담은 한 파일입니다.
-     GitHub 에 index.html 하나만 올려도 그대로 보입니다.
-     css/ · js/ · assets/ 는 같은 내용을 나눠 둔 원본(수정 · 영상 작업용)입니다.
+  · 오프라인: TEAM01/index.html 을 더블클릭 (Chrome · Edge · Safari 최신 버전). 인터넷 연결이 필요 없습니다.
+  · 온라인: 이 폴더를 GitHub 저장소에 그대로 올리고 GitHub Pages 를 켜면 같은 화면이 열립니다.
+            (Settings → Pages → Branch: main / root → 주소/TEAM01/ 로 접속)
 
 폴더 구조 (2030 FUTURE WORLD 웹사이트 제작 가이드 기준)
-  PRODUCT03/
-  ├── index.html                    개인 제품 페이지 (모든 내용을 담은 한 파일)
-  ├── README.txt                    이 문서
-  ├── css/
-  │   └── style.css                 페이지 스타일
+  TEAM01/
+  ├── index.html                 조별 소개 페이지 — 3D 축제 지도 · 입장하기 · 8구역 투어 · 제품 쇼케이스
+  ├── README.txt                 이 문서
+  ├── css/team.css               조별 페이지 스타일
   ├── js/
-  │   ├── config.js                 GitHub 주소 · GLB 경로 설정 (원본)
-  │   ├── glb-viewer.js             GLB 3D 뷰어 (외부 라이브러리 없이 WebGL2)
-  │   ├── model-data.js             echo_ring.glb 사본 (파일을 더블클릭해 열어도 3D가 보이도록)
-  │   └── main.js                   모션 · 3D 모델 · 스토리텔링 · 사용 장면 3D
-  ├── fonts/
-  │   └── README.txt                글꼴 안내 (Pretendard, CDN 사용)
-  └── assets/
-      ├── images/                   [빨간색 · 이미지]
-      │   ├── render-*.jpg             AI 렌더 4뷰 (사선 · 평면 · 정면 · 측면) — 페이지 '렌더 이미지'
-      │   ├── scene-01~05.jpg          시나리오 5컷 — 페이지 03 사용 안내
-      │   ├── product-views/           영상용 제품 뷰 (3D 모델 렌더, 1920×1080 PNG)
-      │   ├── scenario/                영상용 시나리오 전체컷 5장 (1280×720 PNG)
-      │   └── interaction/             인터랙션 명세용 GIF 3개
-      ├── models/                   [파란색 · 3D 모델]
-      │   └── echo_ring.glb            Echo Ring 3D 모델 (상판 60 × 24 mm, 단위 m)
-      ├── videos/                   [노란색 · 영상]
-      │   ├── product-turntable.mp4    제품 360° 회전 (5초, 1920×1080)
-      │   └── scenario-loop.mp4        사용 시나리오 12초 루프 (1280×720)
-      └── content/                  [초록색 · 텍스트·데이터]
-          └── echo-ring.json           페이지 문구 · 사양 · 시나리오 · 치수 데이터
+  │   ├── team-data.js           제품 4종 문구 · 제품 사진 경로
+  │   ├── team-scene.js          3D 축제 지도 (WebGL2, 외부 라이브러리 없음)
+  │   └── team-pages.js          개인 제품 페이지 열기 · 공통 상단 바
+  ├── assets/
+  │   ├── images/                [빨간색 · 이미지]  로고 · 축제 지도 대체 이미지 · 제품 사진(products/)
+  │   ├── models/                [파란색 · 3D 모델]  (조별 3D 지도는 코드로 생성 — 별도 GLB 없음)
+  │   ├── videos/                [노란색 · 영상]
+  │   ├── audio/                 (선택)
+  │   ├── content/products.json  [초록색 · 텍스트·데이터]  제품 4종 문구 · 사양 · 시나리오
+  │   └── fonts/                 한글 글꼴 (모든 페이지가 함께 쓰는 1벌)
+  ├── PRODUCT01/                 비상 컨트롤 배지 (이다호)        index.html · assets/{css,js,images,models}
+  ├── PRODUCT02/                 TIME DIAL — G/O GANGNAM OBJECT   index.html · css/ · assets/{images,models}
+  ├── PRODUCT03/                 Echo Ring (홍재원)               index.html · css/ · js/ · assets/{images,models,videos,content}
+  └── PRODUCT04/                 회전형 리본 스크린 펜스          index.html · css/ · js/
 
-GitHub 주소 넣기
-  index.html 맨 위쪽 <script> 안의 GITHUB_URL = '' 따옴표 안에 주소를 넣으면
-  헤더와 푸터에 GitHub 링크가 나타납니다. 비어 있으면 링크를 숨깁니다.
+링크 규칙
+  · 모든 페이지 진입 파일은 index.html
+  · 개인 페이지 → 조 페이지: ../index.html   /   → 전체 프로젝트: ../../index.html
+  · 개인 페이지 ↔ 다른 개인 페이지: ../PRODUCT0N/index.html
+  · 조 페이지에서 [제품 자세히 보기]를 누르면 PRODUCT0N/index.html 이 공통 상단 바와 함께 열립니다
+    (← 축제 지도 · 제품 소개 / 제품 체험 / 사용 안내 · ‹ 01 02 03 04 ›).
 
-팀 사이트 연결
-  팀 index.html 에서 SITES={0:'PRODUCT01/index.html'} 를
-  SITES={0:'PRODUCT01/index.html',2:'PRODUCT03/index.html'} 로 바꾸면
-  [제품 자세히 보기] 에서 이 페이지가 열립니다.
-  이 페이지의 '2030 HEY GANGNAM' 링크와 이전 · 다음 제품 버튼은 ../index.html 로 갑니다.
-
-페이지 구성
-  히어로          제품명 · 한 줄 소개 · 3D 모델 / 렌더 이미지 전환
-  01 제품 개요     핵심 문장 · 특징 3가지 (방향을 손끝으로 · 손은 그대로 · 판단은 사람이)
-  02 제품 체험     사용 장면 3D 재생 · 손동작 3가지 (느끼기 · 쓸기 · 오므리기)
-  03 사용 안내     스토리텔링: 왼쪽 거리 분석 패널 + 오른쪽 시간 타임라인 5단계, 기대 효과
-  04 제품 상세     3면 도면(치수) · 디자인 언어 · 전체 사양(펼쳐 보기)
+3D 모델 파일 두 벌에 대해
+  각 제품 models/ 의 .glb 는 원본이고, 같은 폴더(또는 js/)의 .glb.js · model-data.js · product-glb-embed.js 는
+  파일을 더블클릭해 열었을 때도 3D 가 보이도록 같은 모델을 담은 사본입니다. (브라우저는 오프라인 파일의 .glb 직접 읽기를 막음)
 
 인터랙티브 요소 [보라색 · 별도 기능 명세]
-  INTERACTION-01 / (GitHub 주소)#pa-s3 — 스크롤에 따라 분석 패널이 바뀌는 스토리텔링
-                 타임라인을 스크롤하면 왼쪽 지도에서 A·B 위치, 거리(m), 혼잡도, 상태가
-                 연결 유지 → 떨어짐 감지 → 방향 안내 → 부르는 중 → 재회 순으로 바뀜
-                 GIF: assets/images/interaction/interaction-01-scroll-story.gif
-  INTERACTION-02 / (GitHub 주소)#top — 마우스 움직임에 반응하는 3D 오브젝트
-                 드래그 · 방향키로 회전, 휠 · 핀치로 확대 (GLB 모델 실시간 렌더)
-                 GIF: assets/images/interaction/interaction-02-mouse-3d.gif
-  INTERACTION-03 / (GitHub 주소)#top — 버튼 클릭으로 시점 · 보기 방식이 전환되는 방식
-                 사선 · 평면 · 정면 · 측면 시점 버튼, 3D 모델 ↔ 렌더 이미지 전환,
-                 02 체험의 장면 번호 1~5 · 재생 · 처음으로 버튼
-                 GIF: assets/images/interaction/interaction-03-buttons.gif
-  ※ (GitHub 주소) 는 개인 GitHub Pages 주소가 정해지면 바꿔 적습니다.
+  INTERACTION-01  스크롤 연동 3D — 스크롤에 따라 카메라가 7호선 → 게이트 → 푸드트럭 → 식사 → 뷰티 → 런웨이 → 무대 → 퇴장으로 이동,
+                  탑뷰에서는 동선 지도로 전환. (PRODUCT03: assets/images/interaction/interaction-01-scroll-story.gif)
+  INTERACTION-02  마우스 반응 3D 오브제 — 드래그·방향키 회전, 휠·핀치 확대, 시점 버튼. (PRODUCT03: interaction-02-mouse-3d.gif)
+  INTERACTION-03  버튼 전환 — [입장하기] 로 7호선 출구까지 이동, 동선 화살표로 한 지점씩 이동, 01–04 로 제품 선택,
+                  가림막 [체험 시작]/[초기화]. (PRODUCT03: interaction-03-buttons.gif)
 
-참고
-  · 상판 60 × 24 mm 외의 치수(두께 3.4 · 높이 19.9 · 링 폭 22 · 밴드 폭 7.8 mm)는
-    렌더 비율에서 잰 추정값입니다. 실제 치수가 정해지면 모델과 도면을 함께 고칩니다.
-  · 03 사용 안내의 시나리오 사진 ④⑤는 이전 설정(오므려 부르기 · 손 맞잡기)으로 그려져
-    있어, 글(윗면 쓸기 · 오므려 종료)과 다를 수 있습니다.
+글꼴
+  Noto Sans CJK KR (SIL Open Font License 1.1) 에서 사이트에 쓰인 글자만 담은 부분 글꼴.
+  Pretendard 가 설치된 PC 에서는 Pretendard 로 표시됩니다.
