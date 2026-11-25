@@ -1,0 +1,59 @@
+{
+  "product": "Echo Ring",
+  "designer": "홍재원",
+  "project": "2030 HEY GANGNAM · 제품 03",
+  "sections": [
+    {
+      "id": "pa-s1",
+      "label": "제품 개요",
+      "lead": "떨어져도, 손끝으로 서로를 느낍니다."
+    },
+    {
+      "id": "pa-s2",
+      "label": "제품 체험",
+      "lead": "세 가지 손동작이면 됩니다."
+    },
+    {
+      "id": "pa-s3",
+      "label": "사용 안내",
+      "lead": "공연 날 저녁, 두 사람의 10분."
+    },
+    {
+      "id": "pa-s4",
+      "label": "제품 상세",
+      "lead": "59.6 × 20.9 mm, 손가락 두 개 위의 크기."
+    }
+  ],
+  "story": [
+    {
+      "time": "19:02",
+      "title": "함께 걷기",
+      "text": "각자 부스를 둘러봅니다.",
+      "image": "assets/images/story-0.jpg"
+    },
+    {
+      "time": "19:09",
+      "title": "감지",
+      "text": "5 m 넘게 멀어지면 두 링이 함께 울립니다.",
+      "image": "assets/images/story-1.jpg"
+    },
+    {
+      "time": "19:09",
+      "title": "방향",
+      "text": "상대가 있는 쪽으로 진동이 흐릅니다.",
+      "image": "assets/images/story-2.jpg"
+    },
+    {
+      "time": "19:10",
+      "title": "부르고 대답하기",
+      "text": "윗면을 쓸면 상대 링이 울립니다.",
+      "image": "assets/images/story-3.jpg"
+    },
+    {
+      "time": "19:12",
+      "title": "다시 함께",
+      "text": "손가락을 오므리면 신호가 끝납니다.",
+      "image": "assets/images/story-4.jpg"
+    }
+  ]
+}
