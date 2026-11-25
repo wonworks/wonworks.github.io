@@ -1,5 +1,0 @@
-/* 사이트 전체 글꼴: Pretendard (사이트에 쓰인 글자 + 자주 쓰는 한글 2,350자) */
-@font-face{font-family:'Pretendard';src:url(../fonts/PretendardVariable.woff) format('woff');font-weight:45 920;font-style:normal;font-display:swap}
-@font-face{font-family:'Pretendard Variable';src:url(../fonts/PretendardVariable.woff) format('woff');font-weight:45 920;font-style:normal;font-display:swap}
-@font-face{font-family:'Noto Sans KR';src:url(../fonts/PretendardVariable.woff) format('woff');font-weight:45 920;font-style:normal;font-display:swap}
-html{font-family:'Pretendard','Pretendard Variable',-apple-system,BlinkMacSystemFont,system-ui,sans-serif}

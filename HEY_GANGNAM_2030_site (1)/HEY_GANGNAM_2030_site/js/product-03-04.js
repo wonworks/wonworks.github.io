@@ -1,1 +1,0 @@
-document.querySelectorAll('#stList .st-i img').forEach((im,i)=>{im.loading='eager';im.decoding='async';im.src='assets/images/p03-story-'+i+'.jpg'});(function(){const s=document.querySelector('.stage-w'),t=document.getElementById('stageSlot');if(s&&t){s.classList.add('moved');t.replaceWith(s);window.dispatchEvent(new Event('resize'))}})();
