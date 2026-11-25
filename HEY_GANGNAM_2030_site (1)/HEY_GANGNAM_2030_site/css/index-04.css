@@ -1,0 +1,8 @@
+
+.srail,.pbar,.wtag,.zcard,.mcu{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.srail{background:rgba(14,10,28,.82)}.srail.lt{background:rgba(255,255,255,.96)}
+.pbar{background:rgba(14,10,28,.9)}.wtag{background:rgba(14,10,28,.9)}
+/* 포커스: 흐림 필터 대신 어둡게만 — 색은 셰이더에서 이미 빼고 있음 */
+.mfoc{-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background:rgba(8,6,16,.42)!important}
+html.mz7 .mfoc{background:rgba(8,6,16,.72)!important}   /* 퇴장 MCU: 사용자 외 주변을 더 어둡게 */
+html.topv .mfoc,html.topv .hlead,html.topv .pumk{display:none!important}
