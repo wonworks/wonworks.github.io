@@ -1,0 +1,1 @@
+document.querySelectorAll("#stList .st-i img").forEach((e,t)=>{e.loading="eager",e.decoding="async",e.src="assets/images/p03-story-"+t+".webp"}),(function(){const e=document.querySelector(".stage-w"),t=document.getElementById("stageSlot");e&&t&&(e.classList.add("moved"),t.replaceWith(e),window.dispatchEvent(new Event("resize")))})();
