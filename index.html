@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko" class="ld">
+<head>
+<meta charset="utf-8">
+<meta name="theme-color" content="#4a4656">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Echo Ring · 홍재원</title>
+<meta name="description" content="Echo Ring, 함께 온 사람과 손끝으로 이어지는 투 핑거 햅틱 링. 2030 HEY GANGNAM 제품 디자인, 홍재원.">
+<link rel="stylesheet" href="pretendard.css">
+<link rel="stylesheet" href="product-03.css">
+</head>
+<body>
+<script>/* Echo Ring 3D 모델: 내장본에서 읽음(오프라인·온라인 공통) */
+if(true){document.write('<script src="p03-echo-ring-data.js"><\/script>');(function(){var f=window.fetch;window.fetch=function(u,o){var s=String(u&&u.url||u);if(/\.glb(\?|$)/.test(s)&&window.ER_GLB_B64){var b=atob(window.ER_GLB_B64),a=new Uint8Array(b.length);for(var i=0;i<b.length;i++)a[i]=b.charCodeAt(i);return Promise.resolve(new Response(a,{headers:{'Content-Type':'model/gltf-binary'}}))}return f.apply(this,arguments)}})()}
+</script>
+<script src="bridge.js"></script>
+<script>const GITHUB_URL="",GLB_PATH="p03-echo-ring.glb";</script>
+<header class="top"><div class="w">
+  <a class="mark" href="#top" aria-label="Echo Ring 맨 위로"><i aria-hidden="true"></i>Echo Ring</a>
+  <nav class="nav" aria-label="페이지 안내"><a href="#pa-s1">제품 소개</a><a href="#pa-s2">제품 체험</a><a href="#pa-s3">사용 안내</a><a href="#pa-s4">제품 상세</a>
+    <a class="gh" data-gh href="#" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>GitHub</a></nav>
+</div></header>
+<main class="w" id="top">
+  <p class="crumb"><a href="https://korean5000hmp.github.io/Digital-Content/" target="_blank" rel="noopener">2030 HEY GANGNAM</a> / 제품 03</p>
+  <section class="hero" aria-label="제품 요약">
+    <h1 data-r="1">Echo Ring</h1>
+    <div class="hero-r"><p class="one" data-r="2">함께 온 사람과<br>손끝으로 이어지는 링</p><p class="cat" data-r="3">관람객 연결 장치 · 3구역 공연장 주변</p></div>
+  </section>
+  <section class="lx" id="lose" aria-label="문제 체험: 인파 속에서 함께 온 사람 놓쳐보기">
+    <canvas id="lxCv" tabindex="0" aria-label="공연장 인파를 위에서 본 장면. 가고 싶은 쪽을 가리키거나 방향키로 움직입니다"></canvas>
+    <div class="lx-hud" id="lxHud" hidden>
+      <p class="lx-tl" id="lxPh"></p>
+      <div class="lx-tr"><dl><div><dt>B와의 거리</dt><dd><b id="lxD">1.4</b>m</dd></div><div><dt>혼잡도</dt><dd><b id="lxC">1.3</b>명/㎡</dd></div></dl></div>
+      <p class="lx-tm" id="lxTm" hidden>20.0</p>
+      <p class="lx-msg" id="lxMsg" role="status" aria-live="polite"></p>
+      <div class="lx-ring" id="lxRing" hidden><i class="lx-ri" aria-hidden="true"></i><span id="lxRt"></span><button type="button" id="lxCall">쓸어서 부르기</button></div>
+    </div>
+    <div class="lx-card" id="lxCard" role="dialog" aria-live="polite"></div>
+    <button type="button" class="lx-skip" id="lxSkip">체험 건너뛰기 ↓</button>
+  </section>
+  
+<section class="vsc" id="scrub" aria-label="Echo Ring 사용 장면. 스크롤하면 장면이 이어집니다">
+    <div class="vsc-st">
+      <canvas id="scrubCv" aria-hidden="true"></canvas>
+      <p class="film-t" aria-hidden="true">Echo Ring</p>
+      <ol class="vsc-ch" aria-label="장면 이동">
+        <li><button type="button"><span>문제</span><i></i></button></li>
+        <li><button type="button"><span>01 착용</span><i></i></button></li>
+        <li><button type="button"><span>02 연결</span><i></i></button></li>
+        <li><button type="button"><span>03 감지</span><i></i></button></li>
+        <li><button type="button"><span>04 부르기</span><i></i></button></li>
+        <li><button type="button"><span>05 재회</span><i></i></button></li>
+      </ol>
+      <p class="vsc-hint">스크롤하면 장면이 이어집니다 ↓</p>
+      <div class="fprog" id="scrubProg" aria-hidden="true"><i></i></div>
+    </div>
+  </section>
+  <div class="stage-w"><div class="stage" id="hero3d" data-mode="3d">
+    <canvas id="m3d" tabindex="0" aria-label="Echo Ring 3D 모델. 드래그나 방향키로 돌리고, 휠로 확대합니다"></canvas>
+    <div class="m3d-msg" id="m3dmsg" hidden></div>
+    <div class="kv"><img decoding="async" id="kvimg" src="p03-view-diagonal.webp" alt="Echo Ring 렌더 이미지, 사선"></div>
+    <div class="seg mode" role="group" aria-label="보기 방식"><button type="button" data-mode="3d" class="on">3D 모델</button><button type="button" data-mode="photo">렌더 이미지</button></div>
+    <div class="seg views" id="kvviews"><button type="button" data-img="0" class="on">사선</button><button type="button" data-img="1" class="">평면</button><button type="button" data-img="2" class="">정면</button><button type="button" data-img="3" class="">측면</button></div>
+    <div class="seg views" id="m3dviews"><button type="button" data-v="persp" class="on">사선</button><button type="button" data-v="top">평면</button><button type="button" data-v="front">정면</button><button type="button" data-v="side">측면</button></div>
+    <p class="readout" id="m3dhint"><b>60 × 24 × 20 mm</b>드래그해서 돌리고, 휠로 확대합니다</p>
+    <div class="vtools" role="toolbar" aria-label="3D 뷰어 도구">
+      <button type="button" data-t="spin" title="자동 회전" aria-pressed="false"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16 10a6 6 0 1 1-2-4.5"/><path d="M14.5 2.5v3.2h-3.2"/></svg><span>자동 회전</span></button>
+      <button type="button" data-t="in" title="확대"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M10 5v10M5 10h10"/></svg><span>확대</span></button>
+      <button type="button" data-t="out" title="축소"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 10h10"/></svg><span>축소</span></button>
+      <button type="button" data-t="reset" title="처음 시점"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10a6 6 0 1 0 2-4.5"/><path d="M5.5 2.5v3.2h3.2"/><circle cx="10" cy="10" r="1.3" fill="currentColor" stroke="none"/></svg><span>초기화</span></button>
+      <button type="button" data-t="full" title="전체 화면"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.5v-4h4M16.5 7.5v-4h-4M3.5 12.5v4h4M16.5 12.5v4h-4"/></svg><span>전체 화면</span></button>
+    </div>
+    <script>(function(){const e=document.getElementById("hero3d"),i=e.querySelector(".vtools"),l=()=>window.__m3d,o=i.querySelector("[data-t=spin]");i.addEventListener("click",r=>{const c=r.target.closest("button");if(!c||!l())return;const s=c.dataset.t,t=l();if(s==="spin"){const n=t.spin(!t.isSpin());o.setAttribute("aria-pressed",n),o.classList.toggle("on",n)}else s==="in"?t.zoom(.8):s==="out"?t.zoom(1.25):s==="reset"?(t.spin(!1),o.setAttribute("aria-pressed",!1),o.classList.remove("on"),t.view("persp"),e.querySelectorAll("[data-v]").forEach(n=>n.classList.toggle("on",n.dataset.v==="persp"))):s==="full"&&(document.fullscreenElement?document.exitFullscreen():e.requestFullscreen?e.requestFullscreen():e.webkitRequestFullscreen&&e.webkitRequestFullscreen())}),document.addEventListener("fullscreenchange",()=>{const r=document.fullscreenElement===e;i.querySelector("[data-t=full] span").textContent=r?"나가기":"전체 화면",setTimeout(()=>l()&&l().kick(),50)})})();</script>
+  </div></div>
+  <section class="sec" id="pa-s1"><header class="sec-h"><span class="n">01</span><h2>제품 개요</h2></header><div class="sec-b"><div class="ovg">
+  <p class="lead" data-r="1">떨어져도,<br>손끝으로 서로를 느낍니다.</p>
+  <p class="p" data-r="2">인파 속에서 멀어지면 두 링이 함께 울리고,<br>상대가 있는 쪽으로 진동이 흐릅니다.</p>
+  <p class="who" data-r="2"><b>한 손엔 음료, 한 손엔 가방끈.</b><br>연인, 친구, 가족, 조부모와 손주가 함께 씁니다.</p>
+  <dl class="feats"><div data-r="3"><dt>방향을 손끝으로</dt><dd>진동이 상대가 있는 쪽으로 흐릅니다.</dd></div><div data-r="4"><dt>손은 그대로</dt><dd>두 손가락에 끼워 손바닥이 비어 있습니다.</dd></div><div data-r="5"><dt>판단은 사람이</dt><dd>AI는 떨어졌다는 사실만 알립니다.</dd></div></dl>
+  </div></div></section>
+  <section class="sec" id="pa-s2"><header class="sec-h"><span class="n">02</span><h2>제품 체험</h2></header><div class="sec-b"><p class="lead" data-r="1">세 가지 손동작이면 됩니다.</p>
+  <div class="exp" data-r="2">
+    <div class="scn" id="pv"><span class="chip" id="chip">함께 걷기</span><div class="sxc" style="position:absolute;inset:0"><canvas aria-label="Echo Ring 사용 장면 3D. 마우스를 움직이면 시점이 바뀝니다"></canvas></div></div>
+    <div class="ctl">
+      <dl class="ges"><div><dt>느끼기</dt><dd>상대 쪽으로 흐르는 진동</dd></div><div><dt>쓸기</dt><dd>윗면을 쓸어 부르기</dd></div><div><dt>오므리기</dt><dd>만나면 신호 끝내기</dd></div></dl>
+      <ol class="scrub" id="xs" aria-label="장면 이동"><li><button type="button" aria-label="1. 함께 걷기">1</button></li><li><button type="button" aria-label="2. 감지">2</button></li><li><button type="button" aria-label="3. 방향">3</button></li><li><button type="button" aria-label="4. 부르고 대답하기">4</button></li><li><button type="button" aria-label="5. 다시 함께">5</button></li></ol>
+      <div class="acts"><button type="button" class="btn pri" id="go">재생</button><button type="button" class="btn line" id="rst">처음으로</button></div>
+    </div></div></div></section>
+  <section class="sec" id="pa-s3"><header class="sec-h"><span class="n">03</span><h2>사용 안내</h2></header><div class="sec-b"><p class="lead" data-r="1">공연 날 저녁,<br>두 사람의 10분.</p>
+  <div class="st" id="story">
+    <div class="st-l"><div class="st-p" aria-hidden="true">
+      <div class="st-ph"><b>A와 B의 거리</b><span class="st-live" id="stLive"><i></i>연결 유지</span></div>
+      <svg class="st-map" viewBox="0 0 360 250" id="stMap">
+        <defs><pattern id="stg" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#ECE8F2" stroke-width="1"/></pattern>
+          <marker id="sta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5B34C4"/></marker></defs>
+        <rect width="360" height="250" fill="url(#stg)"/>
+        <path d="M0 214H360" stroke="#D9D3E6" stroke-width="1.5"/><text x="10" y="234" class="st-tx">무대 방향</text>
+        <g id="stCrowd"></g>
+        <circle id="stTh" r="100" fill="none" stroke="#BFB2E3" stroke-width="1.2" stroke-dasharray="4 5"/>
+        <line id="stLn" stroke="#9C92B5" stroke-width="1.3" stroke-dasharray="3 4"/>
+        <line id="stArr" stroke="#5B34C4" stroke-width="3" stroke-linecap="round" marker-end="url(#sta)" opacity="0"/>
+        <circle id="stCall" r="5" fill="#5B34C4" opacity="0"/>
+        <g id="stA"><circle class="pl" r="10"/><circle class="pl d2" r="10"/><circle r="10" fill="#5B34C4"/><text y="4" class="st-ab">A</text></g>
+        <g id="stB"><circle class="pl" r="10"/><circle class="pl d2" r="10"/><circle r="10" fill="#D9668C"/><text y="4" class="st-ab">B</text></g>
+        <text id="stThT" class="st-tx">5 m</text>
+      </svg>
+      <div class="st-m"><b id="stD">1.4</b><span>m</span><span class="st-dn">혼잡도 <em id="stCr">1.2</em> 명/㎡</span></div>
+      <div class="st-bar"><i id="stBar"></i><s></s></div>
+      <div class="st-f"><span id="stT" class="num">19:02</span><span id="stS">연결 유지</span></div>
+    </div></div>
+    <ol class="st-r" id="stList"><li class="st-i" data-k="0"><time>19:02</time><h3>함께 걷기</h3><p>각자 부스를 둘러봅니다.</p><img decoding="async" src="p03-story-0.webp" alt="함께 걷기 장면" loading="lazy"></li><li class="st-i" data-k="1"><time>19:09</time><h3>감지</h3><p>5 m 넘게 멀어지면 두 링이 함께 울립니다.</p><img decoding="async" src="p03-story-1.webp" alt="감지 장면" loading="lazy"></li><li class="st-i" data-k="2"><time>19:09</time><h3>방향</h3><p>상대가 있는 쪽으로 진동이 흐릅니다.</p><img decoding="async" src="p03-story-2.webp" alt="방향 장면" loading="lazy"></li><li class="st-i" data-k="3"><time>19:10</time><h3>부르고 대답하기</h3><p>윗면을 쓸면 상대 링이 울립니다.</p><img decoding="async" src="p03-story-3.webp" alt="부르고 대답하기 장면" loading="lazy"></li><li class="st-i" data-k="4"><time>19:12</time><h3>다시 함께</h3><p>손가락을 오므리면 신호가 끝납니다.</p><img decoding="async" src="p03-story-4.webp" alt="다시 함께 장면" loading="lazy"></li></ol>
+  </div>
+  <div class="eff"><p class="eff-k" data-r="1">공연장 주변 3구역에서 기대하는 것</p>
+    <ul><li data-r="2"><b>바로 안다</b><span>진동이 곧 알림</span></li><li data-r="3"><b>곧장 찾는다</b><span>방향을 따라 걷기</span></li><li data-r="4"><b>공연에 머문다</b><span>휴대폰 없이</span></li></ul></div></div></section>
+  <section class="sec" id="pa-s4"><header class="sec-h"><span class="n">04</span><h2>제품 상세</h2></header><div class="sec-b"><div id="stageSlot"></div><script>document.querySelectorAll("#stList .st-i img").forEach((e,t)=>{e.loading="eager",e.decoding="async",e.src="p03-story-"+t+".webp"}),(function(){const e=document.querySelector(".stage-w"),t=document.getElementById("stageSlot");e&&t&&(e.classList.add("moved"),t.replaceWith(e),window.dispatchEvent(new Event("resize")))})();</script><p class="lead" data-r="1">59.6 × 20.9 mm,<br>손가락 두 개 위의 크기.</p>
+  <figure class="dwg-f" data-r="2"><a class="dwg-a" href="p03-drawing.webp" target="_blank" rel="noopener"><img class="dwg" src="p03-drawing.webp" width="2600" height="1838" loading="lazy" decoding="async" alt="Echo Ring 제품 도면. 평면도, 정면도, 우측면도, 단면도 A-A와 등각 렌더. 외형 59.6 × 20.9 × 20.5 mm, 링 내폭 16.6 mm, 벽 두께 1.6 mm, 조임 밴드 t1.2 피치 1.9, 표시등 창 5.8 × 1.4 mm"></a><figcaption class="dwg-c"><span>단위 mm · 척도 2:1 · 3각법</span><span>누르면 크게 봅니다</span></figcaption></figure></div></section>
+  <nav class="pn" aria-label="다른 제품"><a href="https://korean5000hmp.github.io/Digital-Content/" target="_blank" rel="noopener"><small>이전 제품 · 02</small><b>회전형 리본 스크린 펜스</b></a><a href="https://korean5000hmp.github.io/Digital-Content/" target="_blank" rel="noopener"><small>다음 제품 · 04</small><b>비상 컨트롤 배지</b></a></nav>
+</main>
+<footer class="foot"><div class="w"><span>Echo Ring, 2030 HEY GANGNAM 제품 디자인 · 홍재원<span data-gh hidden> · <a data-gh-text href="#" target="_blank" rel="noopener"></a></span></span><button type="button" id="totop">맨 위로</button></div></footer>
+<script src="product-03-main.js"></script>
+<script src="product-03-story.js"></script>
+</body>
+</html>
