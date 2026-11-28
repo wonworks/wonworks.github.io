@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Echo Ring · 홍재원</title>
 <meta name="description" content="Echo Ring, 함께 온 사람과 손끝으로 이어지는 투 핑거 햅틱 링. 2030 HEY GANGNAM 제품 디자인, 홍재원.">
-<link rel="stylesheet" href="pretendard.css">
-<link rel="stylesheet" href="product-03.css">
+<link rel="stylesheet" href="fonts/pretendard.css">
+<link rel="stylesheet" href="css/product-03.css">
 </head>
 <body>
 <script>/* Echo Ring 3D 모델: 내장본에서 읽음(오프라인·온라인 공통) */
-if(true){document.write('<script src="p03-echo-ring-data.js"><\/script>');(function(){var f=window.fetch;window.fetch=function(u,o){var s=String(u&&u.url||u);if(/\.glb(\?|$)/.test(s)&&window.ER_GLB_B64){var b=atob(window.ER_GLB_B64),a=new Uint8Array(b.length);for(var i=0;i<b.length;i++)a[i]=b.charCodeAt(i);return Promise.resolve(new Response(a,{headers:{'Content-Type':'model/gltf-binary'}}))}return f.apply(this,arguments)}})()}
+if(true){document.write('<script src="assets/models/p03-echo-ring-data.js"><\/script>');(function(){var f=window.fetch;window.fetch=function(u,o){var s=String(u&&u.url||u);if(/\.glb(\?|$)/.test(s)&&window.ER_GLB_B64){var b=atob(window.ER_GLB_B64),a=new Uint8Array(b.length);for(var i=0;i<b.length;i++)a[i]=b.charCodeAt(i);return Promise.resolve(new Response(a,{headers:{'Content-Type':'model/gltf-binary'}}))}return f.apply(this,arguments)}})()}
 </script>
-<script src="bridge.js"></script>
-<script>const GITHUB_URL="",GLB_PATH="p03-echo-ring.glb";</script>
+<script src="js/bridge.js"></script>
+<script>const GITHUB_URL="",GLB_PATH="assets/models/p03-echo-ring.glb";</script>
 <header class="top"><div class="w">
   <a class="mark" href="#top" aria-label="Echo Ring 맨 위로"><i aria-hidden="true"></i>Echo Ring</a>
   <nav class="nav" aria-label="페이지 안내"><a href="#pa-s1">제품 소개</a><a href="#pa-s2">제품 체험</a><a href="#pa-s3">사용 안내</a><a href="#pa-s4">제품 상세</a>
@@ -58,7 +58,7 @@ if(true){document.write('<script src="p03-echo-ring-data.js"><\/script>');(funct
   <div class="stage-w"><div class="stage" id="hero3d" data-mode="3d">
     <canvas id="m3d" tabindex="0" aria-label="Echo Ring 3D 모델. 드래그나 방향키로 돌리고, 휠로 확대합니다"></canvas>
     <div class="m3d-msg" id="m3dmsg" hidden></div>
-    <div class="kv"><img decoding="async" id="kvimg" src="p03-view-diagonal.webp" alt="Echo Ring 렌더 이미지, 사선"></div>
+    <div class="kv"><img decoding="async" id="kvimg" src="assets/images/p03-view-diagonal.webp" alt="Echo Ring 렌더 이미지, 사선"></div>
     <div class="seg mode" role="group" aria-label="보기 방식"><button type="button" data-mode="3d" class="on">3D 모델</button><button type="button" data-mode="photo">렌더 이미지</button></div>
     <div class="seg views" id="kvviews"><button type="button" data-img="0" class="on">사선</button><button type="button" data-img="1" class="">평면</button><button type="button" data-img="2" class="">정면</button><button type="button" data-img="3" class="">측면</button></div>
     <div class="seg views" id="m3dviews"><button type="button" data-v="persp" class="on">사선</button><button type="button" data-v="top">평면</button><button type="button" data-v="front">정면</button><button type="button" data-v="side">측면</button></div>
@@ -108,16 +108,16 @@ if(true){document.write('<script src="p03-echo-ring-data.js"><\/script>');(funct
       <div class="st-bar"><i id="stBar"></i><s></s></div>
       <div class="st-f"><span id="stT" class="num">19:02</span><span id="stS">연결 유지</span></div>
     </div></div>
-    <ol class="st-r" id="stList"><li class="st-i" data-k="0"><time>19:02</time><h3>함께 걷기</h3><p>각자 부스를 둘러봅니다.</p><img decoding="async" src="p03-story-0.webp" alt="함께 걷기 장면" loading="lazy"></li><li class="st-i" data-k="1"><time>19:09</time><h3>감지</h3><p>5 m 넘게 멀어지면 두 링이 함께 울립니다.</p><img decoding="async" src="p03-story-1.webp" alt="감지 장면" loading="lazy"></li><li class="st-i" data-k="2"><time>19:09</time><h3>방향</h3><p>상대가 있는 쪽으로 진동이 흐릅니다.</p><img decoding="async" src="p03-story-2.webp" alt="방향 장면" loading="lazy"></li><li class="st-i" data-k="3"><time>19:10</time><h3>부르고 대답하기</h3><p>윗면을 쓸면 상대 링이 울립니다.</p><img decoding="async" src="p03-story-3.webp" alt="부르고 대답하기 장면" loading="lazy"></li><li class="st-i" data-k="4"><time>19:12</time><h3>다시 함께</h3><p>손가락을 오므리면 신호가 끝납니다.</p><img decoding="async" src="p03-story-4.webp" alt="다시 함께 장면" loading="lazy"></li></ol>
+    <ol class="st-r" id="stList"><li class="st-i" data-k="0"><time>19:02</time><h3>함께 걷기</h3><p>각자 부스를 둘러봅니다.</p><img decoding="async" src="assets/images/p03-story-0.webp" alt="함께 걷기 장면" loading="lazy"></li><li class="st-i" data-k="1"><time>19:09</time><h3>감지</h3><p>5 m 넘게 멀어지면 두 링이 함께 울립니다.</p><img decoding="async" src="assets/images/p03-story-1.webp" alt="감지 장면" loading="lazy"></li><li class="st-i" data-k="2"><time>19:09</time><h3>방향</h3><p>상대가 있는 쪽으로 진동이 흐릅니다.</p><img decoding="async" src="assets/images/p03-story-2.webp" alt="방향 장면" loading="lazy"></li><li class="st-i" data-k="3"><time>19:10</time><h3>부르고 대답하기</h3><p>윗면을 쓸면 상대 링이 울립니다.</p><img decoding="async" src="assets/images/p03-story-3.webp" alt="부르고 대답하기 장면" loading="lazy"></li><li class="st-i" data-k="4"><time>19:12</time><h3>다시 함께</h3><p>손가락을 오므리면 신호가 끝납니다.</p><img decoding="async" src="assets/images/p03-story-4.webp" alt="다시 함께 장면" loading="lazy"></li></ol>
   </div>
   <div class="eff"><p class="eff-k" data-r="1">공연장 주변 3구역에서 기대하는 것</p>
     <ul><li data-r="2"><b>바로 안다</b><span>진동이 곧 알림</span></li><li data-r="3"><b>곧장 찾는다</b><span>방향을 따라 걷기</span></li><li data-r="4"><b>공연에 머문다</b><span>휴대폰 없이</span></li></ul></div></div></section>
-  <section class="sec" id="pa-s4"><header class="sec-h"><span class="n">04</span><h2>제품 상세</h2></header><div class="sec-b"><div id="stageSlot"></div><script>document.querySelectorAll("#stList .st-i img").forEach((e,t)=>{e.loading="eager",e.decoding="async",e.src="p03-story-"+t+".webp"}),(function(){const e=document.querySelector(".stage-w"),t=document.getElementById("stageSlot");e&&t&&(e.classList.add("moved"),t.replaceWith(e),window.dispatchEvent(new Event("resize")))})();</script><p class="lead" data-r="1">59.6 × 20.9 mm,<br>손가락 두 개 위의 크기.</p>
-  <figure class="dwg-f" data-r="2"><a class="dwg-a" href="p03-drawing.webp" target="_blank" rel="noopener"><img class="dwg" src="p03-drawing.webp" width="2600" height="1838" loading="lazy" decoding="async" alt="Echo Ring 제품 도면. 평면도, 정면도, 우측면도, 단면도 A-A와 등각 렌더. 외형 59.6 × 20.9 × 20.5 mm, 링 내폭 16.6 mm, 벽 두께 1.6 mm, 조임 밴드 t1.2 피치 1.9, 표시등 창 5.8 × 1.4 mm"></a><figcaption class="dwg-c"><span>단위 mm · 척도 2:1 · 3각법</span><span>누르면 크게 봅니다</span></figcaption></figure></div></section>
+  <section class="sec" id="pa-s4"><header class="sec-h"><span class="n">04</span><h2>제품 상세</h2></header><div class="sec-b"><div id="stageSlot"></div><script>document.querySelectorAll("#stList .st-i img").forEach((e,t)=>{e.loading="eager",e.decoding="async",e.src="assets/images/p03-story-"+t+".webp"}),(function(){const e=document.querySelector(".stage-w"),t=document.getElementById("stageSlot");e&&t&&(e.classList.add("moved"),t.replaceWith(e),window.dispatchEvent(new Event("resize")))})();</script><p class="lead" data-r="1">59.6 × 20.9 mm,<br>손가락 두 개 위의 크기.</p>
+  <figure class="dwg-f" data-r="2"><a class="dwg-a" href="assets/images/p03-drawing.webp" target="_blank" rel="noopener"><img class="dwg" src="assets/images/p03-drawing.webp" width="2600" height="1838" loading="lazy" decoding="async" alt="Echo Ring 제품 도면. 평면도, 정면도, 우측면도, 단면도 A-A와 등각 렌더. 외형 59.6 × 20.9 × 20.5 mm, 링 내폭 16.6 mm, 벽 두께 1.6 mm, 조임 밴드 t1.2 피치 1.9, 표시등 창 5.8 × 1.4 mm"></a><figcaption class="dwg-c"><span>단위 mm · 척도 2:1 · 3각법</span><span>누르면 크게 봅니다</span></figcaption></figure></div></section>
   <nav class="pn" aria-label="다른 제품"><a href="https://korean5000hmp.github.io/Digital-Content/" target="_blank" rel="noopener"><small>이전 제품 · 02</small><b>회전형 리본 스크린 펜스</b></a><a href="https://korean5000hmp.github.io/Digital-Content/" target="_blank" rel="noopener"><small>다음 제품 · 04</small><b>비상 컨트롤 배지</b></a></nav>
 </main>
 <footer class="foot"><div class="w"><span>Echo Ring, 2030 HEY GANGNAM 제품 디자인 · 홍재원<span data-gh hidden> · <a data-gh-text href="#" target="_blank" rel="noopener"></a></span></span><button type="button" id="totop">맨 위로</button></div></footer>
-<script src="product-03-main.js"></script>
-<script src="product-03-story.js"></script>
+<script src="js/product-03-main.js"></script>
+<script src="js/product-03-story.js"></script>
 </body>
 </html>
